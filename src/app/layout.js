@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
+import Marquee from "@/components/Marquee";
 
 const customiseBengaliFont = Noto_Serif_Bengali({
   subsets: ["latin", "bengali"],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
+        <Marquee />
         <Banner />
         {children}
         <Footer />

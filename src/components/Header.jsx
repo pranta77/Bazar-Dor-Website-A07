@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import Navliks from "./Navliks";
 
 const Header = () => {
