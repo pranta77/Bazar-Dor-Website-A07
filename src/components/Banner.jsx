@@ -35,7 +35,7 @@ const Banner = () => {
         {/* Right Image */}
         <div className="relative">
           <div className="overflow-hidden rounded-3xl shadow-xl">
-            <Image
+            <Image loading="lazy"
               src="/bazar-hero.png"
               alt="বাজারের পণ্য"
               width={700}
