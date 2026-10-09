@@ -29,29 +29,9 @@ const Header = () => {
               {date}
             </div>
           </div>
-
-          {/* Authentication */}
-
-          <UserInfo/>
-          {/* <div className="flex items-center gap-2 rounded-full border border-gray-200 bg-white p-1 shadow-sm">
-            <Link href={"/sign-in"}>
-              {" "}
-              <button className="rounded-full px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 hover:text-red-600">
-                সাইন ইন
-              </button>{" "}
-            </Link>
-
-            <Link href={"/sign-up"}>
-              {" "}
-              <button className="rounded-full bg-green-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-700">
-                সাইন আপ
-              </button>
-            </Link>
-          </div> */}
+          <UserInfo />
         </div>
         <Navliks />
-
-        {/* Price ticker will come here */}
       </div>
     </header>
   );

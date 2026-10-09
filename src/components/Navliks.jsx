@@ -8,7 +8,7 @@ const Navliks = async () => {
     <nav className="border-t border-gray-100">
       <div className="mx-auto max-w-7xl overflow-x-auto px-2 py-3 sm:px-4">
         <div className="flex min-w-max items-center justify-start gap-2 sm:justify-center sm:gap-3">
-          <Link href={"/"}>হোম</Link>
+          <Link className="hover:bg-red-100 hover:text-green-600 rounded-full px-3 py-2 " href={"/"}>হোম</Link>
           {data?.map((category) => (
             <Link
               key={category.id}
