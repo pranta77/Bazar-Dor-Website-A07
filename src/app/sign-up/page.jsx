@@ -40,7 +40,7 @@ const SignUpPage = () => {
 
       toast.success("অ্যাকাউন্ট সফলভাবে তৈরি হয়েছে!");
 
-      router.push("/");
+      router.push("/sign-in");
       router.refresh();
     } catch (error) {
       console.error("Signup error:", error);

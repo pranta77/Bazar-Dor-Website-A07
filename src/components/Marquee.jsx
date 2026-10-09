@@ -4,6 +4,7 @@ import MarqueeText from "react-marquee-text";
 const Marquee = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}/api/bazardor/products`);
   const data = await res.json();
+  
 
   return (
     <div>

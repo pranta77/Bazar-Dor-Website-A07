@@ -1,15 +1,14 @@
 import Link from "next/link";
 
 const Navliks = async () => {
-  const res = await fetch(
-    `${process.env.BACKEND_URL}/api/bazardor/categories`,
-  );
+  const res = await fetch(`${process.env.BACKEND_URL}/api/bazardor/categories`);
   const data = await res.json();
 
   return (
     <nav className="border-t border-gray-100">
       <div className="mx-auto max-w-7xl overflow-x-auto px-2 py-3 sm:px-4">
         <div className="flex min-w-max items-center justify-start gap-2 sm:justify-center sm:gap-3">
+          <Link href={"/"}>হোম</Link>
           {data?.map((category) => (
             <Link
               key={category.id}
